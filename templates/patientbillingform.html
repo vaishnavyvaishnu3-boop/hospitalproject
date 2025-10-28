@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color:green;">
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+    <label class="form-label">BILL NO:</label>
+    <input type="number" name="billnumber" class="form-control" >
+    </div>
+    <div class="mb-3">
+    <label class="form-label">DATE</label>
+    <input type="date" name="dateds" class="form-control" >
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATIENT DETAILS</label>
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATIENT ID</label>
+    <input type="number" name="patientid" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATIENT NAME</label>
+    <input type="text" name="patientname" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATIENT AGE</label>
+    <input type="number" name="patientage" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATIENT GENDER</label>
+    <input type="text" name="patientgender" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">DATE OF ADMISSION</label>
+    <input type="date" name="admissiondate" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">DATE OF DISCHARGE</label>
+    <input type="date" name="dischargedate" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">CHARGES</label>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ROOM CHARGES</label>
+    <input type="number" name="roomcharge" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">DOCTOR FEES</label>
+    <input type="number" name="doctorfee" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">PATHOLOGY</label>
+    <input type="number" name="pathology" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">MISCELLANOUS</label>
+    <input type="number" name="misc" class="form-control">
+    </div>
+    <div class="mb-3">
+    <label class="form-label">TOTAL</label>
+    <input type="number" name="total" class="form-control">
+    </div>
+    <div>
+        <button type="submit" value="SUBMIT" class="btn btn-primary">SUBMIT</button>
+    </div>
+
+
+</form>
+</body>
+</html>

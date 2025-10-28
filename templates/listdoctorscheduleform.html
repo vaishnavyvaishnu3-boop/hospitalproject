@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:green;">
+{% for Doctorschedule in Doctorschedules %}
+{{ Doctorschedule.doctor }}
+{{ Doctorschedule.times }}
+{{ Doctorschedule.plana }}
+{{ Doctorschedule.planb }}
+{{ Doctorschedule.planc }}
+{{ Doctorschedule.pland }}
+{{ Doctorschedule.plane }}
+{% endfor %}
+
+</body>
+</html>

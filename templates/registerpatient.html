@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body style="background-color:green;">
+<form action="" method="POST">
+  {% csrf_token %}
+ <table>
+        <tr>
+            <td><label>Username:</label></td>
+            <td><input type="text" name="username" placeholder="Enter your username"></td>
+        </tr>
+        <tr>
+            <td><label>First_name</label></td>
+            <td><input type="text" name="first_name" placeholder="Enter your firstname"></td>
+        </tr>
+        <tr>
+            <td><label>Last_name:</label></td>
+            <td><input type="text" name="last_name" placeholder="Enter your lastname"></td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="text" name="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>nput type="password" name="password" placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+             <td><label>Confirm password:</label></td>
+            <td><input type="password" name="cpassword" placeholder="Confirm your password"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="REGISTER" ></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
+
