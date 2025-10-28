@@ -3,6 +3,7 @@ from . import views
 
 
 urlpatterns = [
+    path('',views.home,name="ahomes"),
     path("crea/",views.create_patient_register,name="acrea"),
     path("created/",views.create_patient_appointment,name='acreated'),
     path('listed/',views.list_patient_appointment,name='alisted'),
@@ -22,7 +23,6 @@ urlpatterns = [
     path('creatig/',views.create_billing,name="acreatig"),
     path('registered/',views.registration_patient,name="aregistered"),
     path('logged/',views.loginpatient,name="alogged"),
-    path('homes/',views.home,name="ahomes"),
     path('phomes/',views.patienthome,name="aphomes"),
     path('dhomes/',views.doctorhome,name="adhomes"),
     path('admhomes/',views.administratorhome,name="aadmhomes")
